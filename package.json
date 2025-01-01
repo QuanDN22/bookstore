@@ -11,6 +11,7 @@
     "cdk": "cdk"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.146",
     "@types/jest": "^29.5.14",
     "@types/node": "22.7.9",
     "aws-cdk": "2.173.4",
@@ -20,8 +21,17 @@
     "typescript": "~5.6.3"
   },
   "dependencies": {
+    "@aws-cdk/aws-apigatewayv2-alpha": "^2.114.1-alpha.0",
+    "@aws-sdk/client-dynamodb": "^3.716.0",
+    "@aws-sdk/lib-dynamodb": "^3.716.0",
+    "@aws-solutions-constructs/aws-apigateway-lambda": "^2.76.0",
+    "@aws-solutions-constructs/aws-lambda-dynamodb": "^2.76.0",
     "aws-cdk-lib": "2.173.4",
+    "aws-lambda": "^1.0.7",
+    "aws-solutions-constructs": "^0.0.1-security",
     "constructs": "^10.0.0",
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "fp-ts": "^2.16.9",
+    "uuid": "^11.0.3"
   }
 }

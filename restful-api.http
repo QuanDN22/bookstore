@@ -1,1 +1,28 @@
-GET https://bw2djcepnlqcaliyogqceitrxe0rgyty.lambda-url.ap-southeast-1.on.aws/
+###
+# get all books
+GET https://iz8w0x8k7b.execute-api.ap-southeast-1.amazonaws.com/prod/books HTTP/1.1
+
+###
+# get book by id
+GET https://iz8w0x8k7b.execute-api.ap-southeast-1.amazonaws.com/prod/books/9f531b50-ba27-457b-b1d4-3dfabe04ea65 HTTP/1.1
+
+###
+# create a new book
+POST https://iz8w0x8k7b.execute-api.ap-southeast-1.amazonaws.com/prod/books HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "b4b87924-9d9a-48b1-9e0e-74a5b99eae42",
+  "title": "The Catcher in the Rye",
+  "author": "J.D. Salinger",
+  "isbn": "978-0-316-76948-0",
+  "publicationYear": 2025,
+  "genre": "Fiction",
+  "description": "A novel about the challenges of adolescence and the complexity of life, told through the eyes of Holden Caulfield.",
+  "createdAt": "2025-01-01T00:00:00Z",
+  "updatedAt": "2025-01-01T00:00:00Z"
+}
+
+###
+# delete book by id
+DELETE https://iz8w0x8k7b.execute-api.ap-southeast-1.amazonaws.com/prod/books/9f531b50-ba27-457b-b1d4-3dfabe04ea65 HTTP/1.1
