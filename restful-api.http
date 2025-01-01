@@ -1,1 +1,11 @@
-GET https://bw2djcepnlqcaliyogqceitrxe0rgyty.lambda-url.ap-southeast-1.on.aws/
+###
+GET https://vvyteujvjh.execute-api.ap-southeast-1.amazonaws.com/prod/books
+
+###
+POST https://vvyteujvjh.execute-api.ap-southeast-1.amazonaws.com/prod/books
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "age": 30
+}
